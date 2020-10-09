@@ -5,21 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>John Wick Action</title>
 
   <link rel="stylesheet" href="css/stylesheet.css">
   <link rel="stylesheet" href="css/Chart.css">
 
 
-  <script src="js/script.js"></script>
+
 
   <!-- Libraries -->
   <script src="js/libraries/Chart.bundle.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
 </head>
 
 <body>
-<h1>John Wick Killing Spree!</h1>
-</body>
 
+<div class="firstLayout">
+  <button onclick="startMe()"></button>
+  <div class="chart-container" style=" position:relative, height:30vh; width:60vw">
+    <canvas id="myChart"></canvas>
+  </div>
+</div>
+
+<div class="secondLayout">
+
+</div>
+</body>
+<script src="js/script.js"></script>
 </html>

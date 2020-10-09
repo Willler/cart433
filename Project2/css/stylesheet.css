@@ -2,4 +2,41 @@ body {
   background-color: beige;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.firstLayout {
+  background-color: cyan;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  padding-top: 100px;
+}
+
+.secondLayout {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+.chart-container {
+
+}
+.info {
+  border-width: thin;
+  border-color: white;
+}
+
+button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  left: 50px;
+}
 }
