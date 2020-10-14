@@ -16,22 +16,31 @@
   <!-- Libraries -->
   <script src="js/libraries/Chart.bundle.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- <script src="js/libraries/p5.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
 
 </head>
 
 <body>
 
 <div class="firstLayout">
-  <button id="startButton" onclick="startMe()"></button>
-  <button id="weaponButton" onclick="weaponStart()"></button>
-  <div class="chart-container" style=" position:relative, height:30vh; width:60vw">
+
+  <div class="legendTitle">
+    <h1 class="title">The Action of John Wick: An Analysis</h1>
+    <button id="killerButton" onclick="killedBy()"></button>
+    <button id="weaponButton" onclick="weaponStart()"></button>
+    <button id="locationButton" onclick="locationStart()"></button>
+  </div>
+
+  <div class="chart-container" style=" position:relative, height:25vh; width:50vw">
     <canvas id="myChart"></canvas>
   </div>
+  
 </div>
 
-<div class="secondLayout">
+<!-- <div class="secondLayout">
 
-</div>
+</div> -->
 <script src="js/script.js"></script>
 </body>
 
