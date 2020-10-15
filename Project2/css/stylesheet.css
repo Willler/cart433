@@ -14,7 +14,7 @@ body {
 
 .firstLayout {
   background-color: black;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-content: center;
@@ -36,6 +36,7 @@ body {
   height: 100vh;
   width: 55vw;
   padding-top: 25vh;
+  z-index: 10;
 }
 
 .legendTitle {
@@ -43,6 +44,7 @@ body {
   border-width: 5px; */
   height: 100vh;
   width: 45vw;
+  z-index: 10;
 }
 
 h1 {
@@ -87,6 +89,7 @@ button:hover {
   position: absolute;
   top: 270px;
   left: 130px;
+  z-index: 10;
 }
 
 #weaponText {
@@ -96,6 +99,7 @@ button:hover {
   position: absolute;
   top: 370px;
   left: 130px;
+  z-index: 10;
 }
 
 #weaponButton {
@@ -114,6 +118,7 @@ button:hover {
   position: absolute;
   top: 470px;
   left: 130px;
+  z-index: 10;
 }
 
 .locationButton {
@@ -125,8 +130,28 @@ button:hover {
 }
 
 .locationImage {
-  width: 50px;
-  padding-top: 5px;
+  width: 25px;
+  padding-top: 0px;
+}
+
+.weaponImage {
+  width: 40px;
+  right: : 15px;
+
+}
+
+.killerImage {
+  width: 35px;
+  padding-top: 2px;
+}
+
+
+
+.wickBackground {
+  position: absolute;
+  width: 50%;
+  top: 20vh;
+  left: 50vh;
 }
 
 }

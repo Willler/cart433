@@ -22,6 +22,7 @@
 </head>
 
 <body>
+  <img src="images/johnWickBg.jpg" class="wickBackground" alt="">
 
 <div class="firstLayout">
 
@@ -32,9 +33,9 @@
       <h3 class="subtitle">Methodology, Actors and Progression</h3>
     </div>
 
-    <button id="killerButton" onclick="killedBy()"></button>
+    <button id="killerButton" onclick="killedBy()"><img  class="killerImage" src="images/faceIcon.png" alt=""></button>
       <h5 id="killerText">Number of Kills by Character</h5>
-    <button id="weaponButton" onclick="weaponStart()"></button>
+    <button id="weaponButton" onclick="weaponStart()"><img  class="weaponImage" src="images/weaponIcon.png" alt=""></button>
       <h5 id="weaponText">Number of Kills by Weapon</h5>
     <button class="locationButton" onclick="locationStart()"><img  class="locationImage" src="images/location.png" alt=""></button>
       <h5 id="locationText">Number of Kills by Location</h5>
@@ -44,6 +45,8 @@
   <div class="chart-container" style=" position:relative, height:80vh; width:45vw">
     <canvas id="myChart"></canvas>
   </div>
+
+
 
 </div>
 
