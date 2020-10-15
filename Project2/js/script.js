@@ -18,10 +18,15 @@ let movieMinutes;
 //////preloading some sounds
 let deathSFX = new Audio("sounds/deathSound.wav");
 let gunSFX = new Audio("sounds/gunSound.mp3");
+let hmmSFX = new Audio("sounds/hmmSound.wav");
+let cockingSFX = new Audio("sounds/cockingSound.wav");
+let radarSFX = new Audio("sounds/radarSound.wav");
 
 
 // first graph
 function killedBy() {
+
+hmmSFX.play();
 
   var chart = new Chart(ctx, {
     // The type of chart we want to create
@@ -39,15 +44,23 @@ function killedBy() {
 
     // Configuration options go here
     options: {
+      rotation: 0.25 * Math.PI,
       legend: {
         position: 'right',
-        align: 'start'
+        align: 'start',
+        labels: {
+          fontSize: 16,
+          fontColor: 'white',
+          padding: 15
+        }
       },
         title: {
           display: true,
-          text: 'Killers by Body Count',
+          text: 'Killer / Body Count                        ',
           position: 'top',
-          fontSize: 24
+          fontSize: 24,
+          fontColor: 'white',
+          padding: 20
         },
       }
 
@@ -56,6 +69,8 @@ function killedBy() {
 
 //second graph
 function weaponStart() {
+
+  cockingSFX.play();
 
   var chart = new Chart(ctx, {
       // The type of chart we want to create
@@ -100,6 +115,9 @@ function weaponStart() {
 }
 
 function locationStart() {
+
+  radarSFX.play();
+
   var chart = new Chart(ctx, {
       // The type of chart we want to create
       type: 'doughnut',
@@ -118,12 +136,19 @@ function locationStart() {
       options: {
         title: {
           display: true,
-          text: 'Urban Battlefields',
+          text: 'Location / Blood Spilled                        ',
           position: 'top',
-          fontSize: 24
+          fontSize: 24,
+          fontColor: 'white',
+          padding: 20
         },
         legend: {
           position: 'right',
+          labels: {
+            fontSize: 16,
+            fontColor: 'white',
+            padding: 15
+          }
 
           // display: false
           }
@@ -156,7 +181,7 @@ if (shotBullet == true && bulletX <= 1470) {
 
   updatePositionBullet();
   noStroke();
-  fill(255,0,0);
+  fill('#009DD1');
   ellipse(bulletX,400,15,5);
   createKilled();
 
@@ -194,7 +219,7 @@ function updatePositionBullet() {
 function createKilled() {
   if (bulletX == 740 || bulletX == 741 || bulletX == 742 || bulletX == 743 || bulletX == 744 || bulletX == 745 || bulletX == 750 || bulletX == 755 || bulletX == 760 || bulletX == 762 || bulletX == 764 || bulletX == 767 || bulletX == 770 || bulletX == 930 || bulletX == 933 || bulletX == 943 || bulletX == 946 || bulletX == 950 || bulletX == 952 || bulletX == 954 || bulletX == 957 || bulletX == 960 || bulletX == 970 || bulletX == 972 || bulletX == 974 || bulletX == 976 || bulletX == 978 || bulletX == 980 || bulletX == 982 || bulletX == 984 || bulletX == 986 || bulletX == 988 || bulletX == 990 || bulletX == 992 || bulletX == 994 || bulletX == 996 || bulletX == 998 || bulletX == 1000 || bulletX == 1002 || bulletX == 1004 || bulletX == 1006 || bulletX == 1008 || bulletX == 1010 || bulletX == 1060 || bulletX == 1063 || bulletX == 1066 || bulletX == 1069 || bulletX == 1072 || bulletX == 1075 || bulletX == 1100 || bulletX == 1102 || bulletX == 1104 || bulletX == 1106 || bulletX == 1108 || bulletX == 1110 || bulletX == 1112 || bulletX == 1114 || bulletX == 1116 || bulletX == 1170 || bulletX == 1175 || bulletX == 1180 || bulletX == 1185 || bulletX == 1200 || bulletX == 1210 || bulletX == 1214 || bulletX == 1218 || bulletX == 1222 || bulletX == 1226 || bulletX == 1230 || bulletX == 1234 || bulletX == 1238 || bulletX == 1246 || bulletX == 1300 || bulletX == 1304 || bulletX == 1308 || bulletX == 1312 || bulletX == 1316 || bulletX == 1320 || bulletX == 1324 || bulletX == 1365) {
     console.log('hit');
-    fill(255, 0, 0, 40);
+    fill('#009DD140');
     ellipse(bulletX,400,10,300);
     gunSFX.play();
     killCount += 1;
