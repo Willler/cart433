@@ -22,6 +22,8 @@ let hmmSFX = new Audio("sounds/hmmSound.wav");
 let cockingSFX = new Audio("sounds/cockingSound.wav");
 let radarSFX = new Audio("sounds/radarSound.wav");
 
+let backgroundMusic = new Audio("sounds/backgroundMusic.mp3");
+
 let wickShootingImg;
 let skullImage;
 let timerImage;
@@ -71,7 +73,7 @@ hmmSFX.play();
       },
         title: {
           display: true,
-          text: 'Killer / Body Count                        ',
+          text: 'Killer / Body Count                     ',
           position: 'top',
           fontSize: 24,
           fontColor: 'white',
@@ -151,7 +153,7 @@ function locationStart() {
       options: {
         title: {
           display: true,
-          text: 'Location / Blood Spilled                        ',
+          text: 'Location / Blood Spilled                          ',
           position: 'top',
           fontSize: 24,
           fontColor: 'white',
@@ -174,13 +176,15 @@ function locationStart() {
 
 function setup() {
   canvas = createCanvas(1520, windowHeight);
+
+  backgroundMusic.play();
   // canvas.position(0,0);
   // canvas.style('z-index', '-1');
 
 
   background(0);
   activationButton = createButton('Make Them Pay.')
-  activationButton.position(150, windowHeight + 265);
+  activationButton.position(270, windowHeight + 315);
   activationButton.mouseClicked(shootingBullet);
 
   fill('#003D52');
@@ -188,6 +192,10 @@ function setup() {
   image(wickShootingImg, wickShootingImgX, 215, 275, 400);
   timeline();
 
+}
+
+function mousePressed() {
+  backgroundMusic.play();
 }
 
 function draw() {
