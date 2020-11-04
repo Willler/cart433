@@ -1,7 +1,9 @@
 "use strict";
 //prepping the script
-// $(document).ready(jquerySetup);
+$(document).ready(jquerySetup);
 
-$( function() {
-  $( ".profileCard" ).draggable();
-} );
+
+function jquerySetup() {
+  $( ".profileCard" ).draggable({ stack: ".profileCard" });
+
+}
