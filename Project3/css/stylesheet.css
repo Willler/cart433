@@ -8,39 +8,89 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: black;
   /* z-index: 10; */
+}
+
+h1 {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  font-size: 48px;
+  color: white;
+  z-index: 100;
+}
+
+h2 {
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  color: white;
+  z-index: 100;
 }
 
 #leftSideBox {
   width: 60%;
   height: 100vh;
   background: black;
-  z-index: 1;
+  z-index: 10;
 }
 
 #rightSideBox {
-  width: 40%;
-  height: 96vh;
-  background: green;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 500px;
+  height: 50px;
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.checkBox {
+  width: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
   z-index: 10;
-  margin-right: 2vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkBox:hover {
+  border-color: red;
+}
+
+#firstCheck, #secondCheck, #thirdCheck, #fourthCheck, #fifthCheck, #sixthCheck, #seventhCheck, #eigthCheck, #ninthCheck, #tenthCheck {
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  z-index: 11;
+  display: block;
 }
 
 .profileCard {
   width: 350px;
   height: 150px;
   padding: 0.5em;
-  border-style: solid;
+  border-style: none;
   border-radius: 10px;
   background-color: teal;
   position: absolute;
-  box-shadow: 2px 2px;
+  box-shadow: 2px 2px black;
+  color: white;
+  z-index: 5;
 }
 
 .profileCard:hover{
   border-color: white;
+  box-shadow:  2px 2px white;
   width: 360px;
   height: 160px;
 }
@@ -48,9 +98,46 @@ body {
 #officer1 {
   left: 95px;
   top: 200px;
+  background-color: #C7716F;
 }
 
 #officer2 {
   left: 160px;
   top: 350px;
+  background-color: #7A4545;
+}
+
+#officer3 {
+  left: 500px;
+  top: 500px;
+  background-color: #874D4C;
+}
+
+#officer4 {
+  left: 160px;
+  top: 350px;
+  background-color: #613736;
+}
+
+#officer5 {
+  left: 160px;
+  top: 350px;
+  background-color: #452727;
+}
+
+#officer6 {
+  left: 160px;
+  top: 350px;
+}
+
+.cardButton {
+  position: absolute;
+  z-index: 5;
+  top: 5px;
+}
+
+#bottomHalf {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
 }
