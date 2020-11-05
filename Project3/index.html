@@ -34,8 +34,26 @@
 <div id="topHalf">
 <div id="leftSideBox">
 
-  <h1>A Hegemony of Violence in the NYPD</h1>
+  <h1 onclick="startNoise()">A Hegemony of Violence in the NYPD</h1>
   <h2>The 10 Most Decorated Officers Since 1985</h2>
+
+
+  <div id="goodOfficer1" class="profileCard">
+    <div class="picture">
+      <img src="images/johnDoe.png" alt="" class="mugShot" onclick="checkedWrong()" style="width:125px">
+    </div>
+    <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
+    <div class="info">
+    <p class="name">John Doe<p>
+    <section class="details">
+    <p>White Male, Sergeant</p>
+    <p>0 Total Allegations</p>
+    <p>0 Substantiated</p>
+    <p>0 Complaints</p>
+    </section>
+  </div>
+</div>
+
 
   <div id="officer1" class="profileCard">
     <div class="picture">
@@ -43,7 +61,7 @@
     </div>
     <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
     <div class="info">
-    <p class="name">Daniel Sbarra<p>
+    <p class="name">D. Sbarra<p>
     <section class="details">
     <p>White Male, Lieutenant</p>
     <p>75 Total Allegations</p>
@@ -54,130 +72,218 @@
 
   </div>
 
+  </div>
+
   <div id="officer2" class="profileCard">
     <div class="picture">
-      <img src="images/face.png" alt="" class="mugShot" onclick="checkFunction()" style="width:125px">
+      <img src="images/face2.png" alt="" class="mugShot" onclick="checkFunction2()" style="width:125px">
     </div>
-
+      <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
     <div class="info">
-    <h3 class="name">Mathew Reich</h3>
+    <p class="name">M. Reich</p>
+  <section class="details">
     <p>White Male, Detective</p>
     <p>75 Total Allegations</p>
     <p>07 Substantiated</p>
-    <button class="cardButton" onclick="checkFunction2()"></button>
+    <p>Complaints</p>
+  </section>
     </div>
   </div>
+
+  <div id="goodOfficer2" class="profileCard">
+    <div class="picture">
+      <img src="images/johnDoe.png" alt="" class="mugShot" onclick="checkedWrong()" style="width:125px">
+    </div>
+    <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
+    <div class="info">
+    <p class="name">John Doe<p>
+    <section class="details">
+    <p>White Male, Sergeant</p>
+    <p>0 Total Allegations</p>
+    <p>0 Substantiated</p>
+    <p>0 Complaints</p>
+    </section>
+  </div>
+</div>
 
 
   <div id="officer3" class="profileCard">
     <div class="picture">
-      <img src="images/face.png" alt="" class="mugShot" onclick="checkFunction()" style="width:125px">
+      <img src="images/face3.png" alt="" class="mugShot" onclick="checkFunction3()" style="width:125px">
     </div>
-
+      <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
     <div class="info">
-    <h3 class="name">Joseph Tallarine</h3>
-    <p>White Male, Detective</p>
-    <p>73 Total Allegations</p>
-    <p>23 Substantiated</p>
-    <button class="cardButton" onclick="checkFunction3()"></button>
+
+    <p class="name">J. Tallarine</p>
+    <section class="details">
+      <p>White Male, Detective</p>
+      <p>73 Total Allegations</p>
+      <p>23 Substantiated</p>
+      <p>Complaints</p>
+    </section>
   </div>
   </div>
 
   <div id="officer4" class="profileCard">
     <div class="picture">
-      <img src="images/face.png" alt="" class="mugShot" onclick="checkFunction()" style="width:125px">
+      <img src="images/face4.png" alt="" class="mugShot" onclick="checkFunction4()" style="width:125px">
     </div>
-
+      <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
     <div class="info">
-    <h3 class="name">Gary Messina</h3>
-    <p>White Male, Deputy Inspector</p>
-    <p>73 Total Allegations</p>
-    <p>06 Substantiated</p>
-    <button class="cardButton" onclick="checkFunction4()"></button>
+    <p class="name">G. Messina</p>
+    <section class="details">
+      <p>White Male, Deputy Inspector</p>
+      <p>73 Total Allegations</p>
+      <p>06 Substantiated</p>
+      <p>Complaints</p>
+  </section>
   </div>
   </div>
+
+  <div id="goodOfficer3" class="profileCard">
+    <div class="picture">
+      <img src="images/johnDoe.png" alt="" class="mugShot" onclick="checkedWrong()" style="width:125px">
+    </div>
+    <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
+    <div class="info">
+    <p class="name">John Doe<p>
+    <section class="details">
+    <p>White Male, Sergeant</p>
+    <p>0 Total Allegations</p>
+    <p>0 Substantiated</p>
+    <p>0 Complaints</p>
+    </section>
+  </div>
+</div>
 
   <div id="officer5" class="profileCard">
     <div class="picture">
-      <img src="images/face.png" alt="" class="mugShot" onclick="checkFunction()" style="width:125px">
+      <img src="images/face5.png" alt="" class="mugShot" onclick="checkFunction5()" style="width:125px">
     </div>
-
+      <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
     <div class="info">
-    <h3 class="name">Christophe McCormack</h3>
+    <p class="name">C. McCormack</p>
+    <section class="details">
     <p>White Male, Chiefs/Others</p>
     <p>72 Total Allegations</p>
     <p>16 Substantiated</p>
-    <button class="cardButton" onclick="checkFunction5()"></button>
+    <p>Complaints</p>
+    <section>
   </div>
   </div>
 
   <div id="officer6" class="profileCard">
     <div class="picture">
-      <img src="images/face.png" alt="" class="mugShot" onclick="checkFunction()" style="width:125px">
+      <img src="images/face6.png" alt="" class="mugShot" onclick="checkFunction6()" style="width:125px">
     </div>
-
+      <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
     <div class="info">
-    <h3 class="name">William Taylor</h3>
-    <p>White Male, Inspector</p>
-    <p>65 Total Allegations</p>
-    <p>8 Substantiated</p>
-    <button class="cardButton" onclick="checkFunction6()"></button>
+    <p class="name">W. Taylor</p>
+    <section class="details">
+      <p>White Male, Inspector</p>
+      <p>65 Total Allegations</p>
+      <p>8 Substantiated</p>
+      <p>Complaints</p>
+    </section>
   </div>
   </div>
+
+  <div id="goodOfficer4" class="profileCard">
+    <div class="picture">
+      <img src="images/johnDoe.png" alt="" class="mugShot" onclick="checkedWrong()" style="width:125px">
+    </div>
+    <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
+    <div class="info">
+    <p class="name">John Doe<p>
+    <section class="details">
+    <p>White Male, Sergeant</p>
+    <p>0 Total Allegations</p>
+    <p>0 Substantiated</p>
+    <p>0 Complaints</p>
+    </section>
+  </div>
+</div>
 
   <div id="officer7" class="profileCard">
     <div class="picture">
-      <img src="images/face.png" alt="" class="mugShot" onclick="checkFunction()" style="width:125px">
+      <img src="images/face8.png" alt="" class="mugShot" onclick="checkFunction7()" style="width:125px">
     </div>
-
+      <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
     <div class="info">
-    <h3 class="name">David Cheesewright</h3>
+    <p class="name">D. Cheesewright</p>
+    <section class="details">
     <p>Asian Male, Sergeant</p>
     <p>63 Total Allegations</p>
     <p>16 Substantiated</p>
-    <button class="cardButton" onclick="checkFunction7()"></button>
+    <p>Complaints</p>
+    </section>
   </div>
   </div>
 
   <div id="officer8" class="profileCard">
     <div class="picture">
-      <img src="images/face.png" alt="" class="mugShot" onclick="checkFunction()" style="width:125px">
+      <img src="images/face9.png" alt="" class="mugShot" onclick="checkFunction8()" style="width:125px">
     </div>
-
+      <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
     <div class="info">
-    <h3 class="name">Mike Civil</h3>
+    <p class="name">M. Civil</p>
+    <section class="details">
     <p>Black Male, Detective</p>
     <p>56 Total Allegations</p>
     <p>03 Substantiated</p>
-    <button class="cardButton" onclick="checkFunction8()"></button>
+    <p>Complaints</p>
+  </section>
+
   </div>
   </div>
+
+  <div id="goodOfficer5" class="profileCard">
+    <div class="picture">
+      <img src="images/johnDoe.png" alt="" class="mugShot" onclick="checkedWrong()" style="width:125px">
+    </div>
+    <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
+    <div class="info">
+    <p class="name">John Doe<p>
+    <section class="details">
+    <p>White Male, Sergeant</p>
+    <p>0 Total Allegations</p>
+    <p>0 Substantiated</p>
+    <p>0 Complaints</p>
+    </section>
+  </div>
+</div>
 
   <div id="officer9" class="profileCard">
     <div class="picture">
-      <img src="images/face.png" alt="" class="mugShot" onclick="checkFunction()" style="width:125px">
+      <img src="images/face7.png" alt="" class="mugShot" onclick="checkFunction9()" style="width:125px">
     </div>
-
+            <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
     <div class="info">
-    <h3 class="name">Paul McMahon</h3>
+    <p class="name">P. McMahon</p>
+    <section class="details">
     <p>White Male, Lieutenant</p>
     <p>56 Total Allegations</p>
     <p>09 Substantiated</p>
-    <button class="cardButton" onclick="checkFunction9()"></button>
+    <p>Complaints</p>
+  </section>
+
   </div>
   </div>
 
   <div id="officer10" class="profileCard">
     <div class="picture">
-      <img src="images/face.png" alt="" class="mugShot" onclick="checkFunction()" style="width:125px">
+      <img src="images/face10.png" alt="" class="mugShot" onclick="checkFunction10()" style="width:125px">
     </div>
-
+          <img src="images/nypdbadge.png" class="badgeImage" style="width:30%" alt="">
     <div class="info">
-    <h3 class="name">Michael Raso</h3>
-    <p>White Male, Lieutenant</p>
-    <p>50 Total Allegations</p>
-    <p>14 Substantiated</p>
-    <button class="cardButton" onclick="checkFunction10()"></button>
+
+    <p class="name">M. Raso</p>
+      <section class="details">
+      <p>White Male, Lieutenant</p>
+      <p>50 Total Allegations</p>
+      <p>14 Substantiated</p>
+      <p>Complaints</p>
+  </section>
   </div>
   </div>
 </div>
