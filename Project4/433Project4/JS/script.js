@@ -64,6 +64,53 @@ function developmentVoice() {
   $("#sensesIcon").toggle("puff");
 }
 
+function epoch4Q2Voice() {
+  responsiveVoice.speak("technology was itself capable of sensing, storing, and evaluating elaborate patterns of information");
+  $("#epoch4Quote2Icon").toggle("puff");
+}
+
+function epoch4Q3Voice() {
+  responsiveVoice.speak("one cubic inch of brain matter every hundred thousand years, whereas we are roughly doubling the computational capacity of computers every year");
+  $("#epoch4Quote3Icon").toggle("puff");
+}
+
+//////////// epoch 5 quotes for responsive voice
+
+function epoch5Q1Voice() {
+  responsiveVoice.speak("human-machine civilization to transcend the human brain’s limitations");
+  $("#epoch5Quote1Icon").toggle("puff");
+}
+
+function epoch5Q2Voice() {
+  responsiveVoice.speak("overcoming the profound limitations of biological evolution");
+  $("#epoch5Quote2Icon").toggle("puff");
+}
+
+function epoch5Q3Voice() {
+  responsiveVoice.speak("merger of the vast knowledge embedded in our own brains with the vastly greater capacity, speed, and knowledge-sharing ability of our technology");
+  $("#epoch5Quote3Icon").toggle("puff");
+}
+
+/////////// Epoch 6 quotes for voice
+
+function epoch6Q1Voice() {
+  responsiveVoice.speak("We currently understand the speed of light as a bounding factor on the transfer of information, but even that, as hinted, may be superseded");
+  $("#epoch6Quote1Icon").toggle("puff");
+}
+
+function epoch6Q2Voice() {
+  responsiveVoice.speak("Intelligence will begin to saturate the matter and energy in its midst");
+  $("#epoch6Quote2Icon").toggle("puff");
+}
+
+function epoch6Q3Voice() {
+  responsiveVoice.speak("mechanisms of the universe will be transformed into exquisitely sublime forms of intelligence");
+  $("#epoch6Quote3Icon").toggle("puff");
+}
+
+
+////////////// Disable displays
+
 function disableDisplay() {
   if (displayVariable) {
   $("#legendDiv").fadeOut(1500);
@@ -73,6 +120,9 @@ function disableDisplay() {
   displayVariable = true;
 }
 }
+
+
+///// Backup Json data
 
 particlesJS ('particles-js',
   {

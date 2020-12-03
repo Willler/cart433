@@ -79,6 +79,7 @@ button {
   position: absolute;
   z-index: 10;
   -webkit-animation: pulse 5s ease-out infinite;
+
 }
 
  #epoch5HumanLeft, #epoch5AndroidRight {
@@ -87,6 +88,7 @@ button {
    -webkit-animation: pulse 5s ease-out infinite;
    padding-left: 5px;
    padding-right: 5px;
+
  }
 
 #epoch5HumanLeft
@@ -146,11 +148,74 @@ button {
 
 #sensesIcon {
   position: absolute;
-  z-index: 10;
-  top: 400;
-  left: 60vh;
+  top: 290px;
+  left: 60vw;
+  color: white;
+}
+
+#epoch4Quote2Icon {
+  position: absolute;
+  top: 390px;
+  left: 40vw;
+  color: white;
+}
+
+#epoch4Quote3Icon {
+  position: absolute;
+  top: 575px;
+  left: 55vw;
+  color: white;
+}
+
+#epoch5Quote1Icon {
+  position: absolute;
+  top: 290px;
+  left: 60vw;
+  color: white;
+}
+
+#epoch5Quote2Icon {
+  position: absolute;
+  top: 390px;
+  left: 40vw;
+  color: white;
+}
+
+#epoch5Quote3Icon {
+  position: absolute;
+  top: 575px;
+  left: 55vw;
+  color: white;
+}
+
+#epoch6Quote1Icon {
+  position: absolute;
+  top: 290px;
+  left: 60vw;
+  color: white;
+}
+
+#epoch6Quote2Icon {
+  position: absolute;
+  top: 390px;
+  left: 40vw;
+  color: white;
+}
+
+#epoch6Quote3Icon {
+  position: absolute;
+  top: 575px;
+  left: 55vw;
+  color: white;
+}
+
+#sensesIcon, #epoch4Quote2Icon, #epoch4Quote3Icon, #epoch5Quote1Icon, #epoch5Quote2Icon, #epoch5Quote3Icon, #epoch6Quote1Icon, #epoch6Quote2Icon, #epoch6Quote3Icon   {
   cursor: pointer;
-  color: green;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 15px 5px;
+  z-index: 10;
 }
 
 /* ---- particles.js container ---- */
