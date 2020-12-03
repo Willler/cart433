@@ -1,0 +1,167 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  /* background-image: linear-gradient(#21135c, black); */
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+#epoch4Div, #epoch5Div, #epoch6Div, #cosmicHorrorDiv {
+  width: 100vw;
+  height: 100vh;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-style: solid;
+  border-color: white; */
+}
+
+#epoch4Div {
+
+}
+
+#epoch5Div {
+
+}
+
+#epoch6Div {
+
+}
+
+#cosmicHorrorDiv {
+
+}
+
+button {
+  background-color: red;
+}
+
+.epoch4Button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.epoch5Button {
+  position: absolute;
+  top: 25px;
+  left: 5px;
+}
+
+.epoch6Button {
+  position: absolute;
+  top: 45px;
+  left: 5px;
+}
+
+.cosmicHorrorButton {
+  position: absolute;
+  top: 65px;
+  left: 5px;
+}
+
+.projectTitle {
+  position: absolute;
+}
+
+.projectSubtitle {
+  position: absolute;
+  top: 40px;
+}
+
+#epoch4HumanFace, #epoch6AndroidFace {
+  position: absolute;
+  z-index: 10;
+  -webkit-animation: pulse 5s ease-out infinite;
+}
+
+ #epoch5HumanLeft, #epoch5AndroidRight {
+   position: absolute;
+   z-index: 10;
+   -webkit-animation: pulse 5s ease-out infinite;
+   padding-left: 5px;
+   padding-right: 5px;
+ }
+
+#epoch5HumanLeft
+  {
+   padding-right: 220px;
+ }
+
+ #epoch5AndroidRight {
+   padding-left: 220px;
+ }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.0);
+}
+  50% {
+    transform: scale(1.05);
+  }
+
+}
+
+
+
+#epoch4HumanFace:hover, #epoch6AndroidFace:hover, #epoch5HumanLeft:hover, #epoch5AndroidRight:hover {
+  /* animation-name: example;
+  animation-duration: 2s; */
+  /* animation-duration: 2s; */
+  -webkit-animation: slidein 2s forwards;
+  /* opacity:50% */
+}
+
+@keyframes slidein {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 50%;
+  }
+}
+
+#legendDiv {
+  position: fixed;
+  display: block;
+
+  bottom: 50px;
+  left: 50px;
+  width: 300px;
+  height: 150px;
+  background-color: #3618b580;
+  z-index: 100;
+}
+
+.legendCategories {
+  padding-left: 10px;
+}
+
+#sensesIcon {
+  position: absolute;
+  z-index: 10;
+  top: 400;
+  left: 60vh;
+  cursor: pointer;
+  color: green;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js, #particles-js2, #particles-js3{
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

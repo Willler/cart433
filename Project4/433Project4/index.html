@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Posthuman Singularity: The Epochs and Cosmic Horror</title>
+
+  <link rel="stylesheet" href="CSS/stylesheet.css">
+
+
+
+
+
+  <!-- Libraries -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.js" integrity="sha512-BgV3bZfMmUklIZI+dP0SILdmQ0RBY2gxegFFyfgo4Ui56WhKF4Pny9LsV/l96jxDDA+2w47zAXA4IyHo2UT/Qg==" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<div id="buttonContainer">
+  <button class="epoch4Button">E4</button>
+  <button class="epoch5Button">E5</button>
+  <button class="epoch6Button">E6</button>
+  <!-- <button class="cosmicHorrorButton">CH</button> -->
+</div>
+
+  <h1 class="projectTitle">The Last Epochs of Evolution</h1>
+  <h3 class="projectSubtitle">An Interprative Vision of Kurzweil's Singularity</h3>
+
+  <div id="epoch4Div" style="display:none;">
+    <img src="Assets/humanFace.png" style="width:30%;" id="epoch4HumanFace" onclick="disableDisplay()"></img>
+    <p id="sensesIcon" onclick="developmentVoice()">⚪</p>
+    <div id="particles-js"></div>
+  </div>
+
+  <div id="epoch5Div" style="display:none;">
+    <img src="Assets/humanLeft.png" style="width:15%;" id="epoch5HumanLeft" onclick="disableDisplay()"></img>
+    <img src="Assets/androidRight.png" style="width:13%;" id="epoch5AndroidRight" onclick="disableDisplay()"></img>
+    <div id="particles-js3"></div>
+  </div>
+
+  <div id="epoch6Div" style="display:none;">
+    <img src="Assets/androidFace.png" style="width:25%;" id="epoch6AndroidFace" onclick="disableDisplay()"></img>
+    <div id="particles-js2"></div>
+  </div>
+
+  <div id="legendDiv">
+    <!-- <p id="legendHeader">Legend</p> -->
+    <p class="legendCategories">Particles ( • ): Fields of Knowledge</p>
+    <p class="legendCategories">Links (▬▬): Knowledge Sharing</p>
+    <p class="legendCategories">Size (∙  •  ⚪): Brain Capacity</p>
+    <p class="legendCategories">Speed ( → ): Exponential Growth</p>
+
+  </div>
+
+  <script src="particles.js"></script>
+  <script src="JS/script.js" charset="utf-8"></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=HVnxGB6E"></script>
+</body>
