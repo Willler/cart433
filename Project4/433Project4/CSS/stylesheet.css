@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
 body {
   padding: 0;
   margin: 0;
@@ -10,6 +14,8 @@ body {
   height: 100vh;
 
 }
+
+
 
 #epoch4Div, #epoch5Div, #epoch6Div, #cosmicHorrorDiv {
   width: 100vw;
@@ -38,42 +44,80 @@ body {
 
 }
 
+#epoch4Header {
+  font-family: 'Roboto Condensed', sans-serif;
+  position: absolute;
+  bottom: 33vh;
+  left: 3.0vw;
+  font-size: 38px;
+}
+#epoch5Header {
+  font-family: 'Roboto Condensed', sans-serif;
+  position: absolute;
+  bottom: 33vh;
+  left: 2.55vw;
+  font-size: 38px;
+}
+
+#epoch6Header {
+  font-family: 'Roboto Condensed', sans-serif;
+  position: absolute;
+  bottom: 33vh;
+  left: 1.0vw;
+  font-size: 38px;
+}
+
 button {
-  background-color: red;
+  background-color: #3618b580;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  cursor: pointer;
 }
 
 .epoch4Button {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  bottom: 31vh;
+  left: 5vw;
 }
 
 .epoch5Button {
   position: absolute;
-  top: 25px;
-  left: 5px;
+  bottom: 31vh;
+  left: 11.5vw;
 }
 
 .epoch6Button {
   position: absolute;
-  top: 45px;
-  left: 5px;
+  bottom: 31vh;
+  left: 18vw;
 }
 
-.cosmicHorrorButton {
+/* #introScreen {
   position: absolute;
-  top: 65px;
-  left: 5px;
+  top: 40vh;
+  text-align: center;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+} */
+
+#projectTitle {
+  position: absolute;
+  font-size: 56px;
+  top: 30%;
+  text-align: center;
 }
 
-.projectTitle {
+#projectSubtitle {
   position: absolute;
+  top: 40%;
+  text-align: center;
 }
 
-.projectSubtitle {
-  position: absolute;
-  top: 40px;
-}
+
 
 #epoch4HumanFace, #epoch6AndroidFace {
   position: absolute;
@@ -133,17 +177,25 @@ button {
 #legendDiv {
   position: fixed;
   display: block;
-
+  border-radius: 5px;
   bottom: 50px;
   left: 50px;
   width: 300px;
-  height: 150px;
+  height: 200px;
   background-color: #3618b580;
+  font-family: 'Roboto Condensed', sans-serif;
   z-index: 100;
 }
 
-.legendCategories {
-  padding-left: 10px;
+#legendHeader {
+  font-size: 24px;
+  margin: 0;
+  padding-top: 12px;
+  font-weight: bold;
+}
+
+.legendCategories, #legendHeader {
+  padding-left: 15px;
 }
 
 #sensesIcon {

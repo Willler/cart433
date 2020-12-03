@@ -5,6 +5,10 @@ $(document).ready(jquerySetup);
 
 let displayVariable = true;
 
+let hoverSFX = new Audio("Assets/hover.mp3");
+let selectSFX = new Audio("Assets/select.wav");
+let backgroundMusic = new Audio("Assets/wormhole.mp3");
+
 window.onload = function() {
   particlesJS.load('particles-js', 'particles.json', function() {
     console.log('callback - particles.js config loaded');
@@ -27,8 +31,12 @@ function jquerySetup() {
   responsiveVoice.setDefaultRate(0.75);
 
   $(".epoch4Button").click(function(){
+    backgroundMusic.play();
+    backgroundMusic.volume = 0.5;
     document.getElementById('epoch5Div').style.display = 'none';
     document.getElementById('epoch6Div').style.display = 'none';
+    document.getElementById('projectTitle').style.display = 'none';
+    document.getElementById('projectSubtitle').style.display = 'none';
     // document.getElementById('cosmicHorrorDiv').style.display = 'none';
     $("#epoch4Div").fadeIn(1500);
     responsiveVoice.speak("Epoch 4: Technology");
@@ -37,6 +45,8 @@ function jquerySetup() {
   $(".epoch5Button").click(function(){
     document.getElementById('epoch4Div').style.display = 'none';
     document.getElementById('epoch6Div').style.display = 'none';
+    document.getElementById('projectTitle').style.display = 'none';
+    document.getElementById('projectSubtitle').style.display = 'none';
     // document.getElementById('cosmicHorrorDiv').style.display = 'none';
     $("#epoch5Div").fadeIn(1500);
     responsiveVoice.speak("Epoch Five: The Merger of Human Technology with Human Intelligence");
@@ -45,6 +55,8 @@ function jquerySetup() {
   $(".epoch6Button").click(function(){
     document.getElementById('epoch5Div').style.display = 'none';
     document.getElementById('epoch4Div').style.display = 'none';
+    document.getElementById('projectTitle').style.display = 'none';
+    document.getElementById('projectSubtitle').style.display = 'none';
     // document.getElementById('cosmicHorrorDiv').style.display = 'none';
     $("#epoch6Div").fadeIn(1500);
     responsiveVoice.speak("Epoch 6: the universe wakes up");
@@ -114,9 +126,15 @@ function epoch6Q3Voice() {
 function disableDisplay() {
   if (displayVariable) {
   $("#legendDiv").fadeOut(1500);
+  $(".epoch4Button").fadeOut(1500);
+  $(".epoch5Button").fadeOut(1500);
+  $(".epoch6Button").fadeOut(1500);
   displayVariable = false;
 } else if (!displayVariable){
   $("#legendDiv").fadeIn(1500);
+  $(".epoch4Button").fadeIn(1500);
+  $(".epoch5Button").fadeIn(1500);
+  $(".epoch6Button").fadeIn(1500);
   displayVariable = true;
 }
 }
