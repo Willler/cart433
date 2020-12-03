@@ -38,8 +38,10 @@ function jquerySetup() {
     document.getElementById('epoch6Div').style.display = 'none';
     document.getElementById('projectTitle').style.display = 'none';
     document.getElementById('projectSubtitle').style.display = 'none';
+    document.getElementById('kQuote').style.display = 'none';
+    document.getElementById('kQuote2').style.display = 'none';
     // document.getElementById('cosmicHorrorDiv').style.display = 'none';
-    $("#epoch4Div").fadeIn(1500);
+    $("#epoch4Div").fadeIn(2500);
     responsiveVoice.speak("Epoch 4: Technology", "UK English Male");
   })
 
@@ -49,8 +51,10 @@ function jquerySetup() {
     document.getElementById('epoch6Div').style.display = 'none';
     document.getElementById('projectTitle').style.display = 'none';
     document.getElementById('projectSubtitle').style.display = 'none';
+    document.getElementById('kQuote').style.display = 'none';
+    document.getElementById('kQuote2').style.display = 'none';
     // document.getElementById('cosmicHorrorDiv').style.display = 'none';
-    $("#epoch5Div").fadeIn(1500);
+    $("#epoch5Div").fadeIn(2500);
     responsiveVoice.speak("Epoch Five: The Merger of Human Technology with Human Intelligence", "Chinese Male");
   })
 
@@ -60,8 +64,10 @@ function jquerySetup() {
     document.getElementById('epoch4Div').style.display = 'none';
     document.getElementById('projectTitle').style.display = 'none';
     document.getElementById('projectSubtitle').style.display = 'none';
+    document.getElementById('kQuote').style.display = 'none';
+    document.getElementById('kQuote2').style.display = 'none';
     // document.getElementById('cosmicHorrorDiv').style.display = 'none';
-    $("#epoch6Div").fadeIn(1500);
+    $("#epoch6Div").fadeIn(2500);
     responsiveVoice.speak("Epoch 6: the universe wakes up");
   })
 
