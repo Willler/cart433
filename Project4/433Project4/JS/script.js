@@ -28,31 +28,34 @@ window.onload = function() {
 
 function jquerySetup() {
 
-  responsiveVoice.setDefaultRate(0.75);
+  responsiveVoice.setDefaultRate(1.0);
 
   $(".epoch4Button").click(function(){
     backgroundMusic.play();
     backgroundMusic.volume = 0.5;
+    selectSFX.play(0);
     document.getElementById('epoch5Div').style.display = 'none';
     document.getElementById('epoch6Div').style.display = 'none';
     document.getElementById('projectTitle').style.display = 'none';
     document.getElementById('projectSubtitle').style.display = 'none';
     // document.getElementById('cosmicHorrorDiv').style.display = 'none';
     $("#epoch4Div").fadeIn(1500);
-    responsiveVoice.speak("Epoch 4: Technology");
+    responsiveVoice.speak("Epoch 4: Technology", "UK English Male");
   })
 
   $(".epoch5Button").click(function(){
+    selectSFX.play(0);
     document.getElementById('epoch4Div').style.display = 'none';
     document.getElementById('epoch6Div').style.display = 'none';
     document.getElementById('projectTitle').style.display = 'none';
     document.getElementById('projectSubtitle').style.display = 'none';
     // document.getElementById('cosmicHorrorDiv').style.display = 'none';
     $("#epoch5Div").fadeIn(1500);
-    responsiveVoice.speak("Epoch Five: The Merger of Human Technology with Human Intelligence");
+    responsiveVoice.speak("Epoch Five: The Merger of Human Technology with Human Intelligence", "Chinese Male");
   })
 
   $(".epoch6Button").click(function(){
+    selectSFX.play(0);
     document.getElementById('epoch5Div').style.display = 'none';
     document.getElementById('epoch4Div').style.display = 'none';
     document.getElementById('projectTitle').style.display = 'none';
@@ -72,51 +75,60 @@ function jquerySetup() {
 }
 
 function developmentVoice() {
+  selectSFX.play(0);
   responsiveVoice.speak("Development: Simple mechanisms to elaborate automata");
   $("#sensesIcon").toggle("puff");
 }
 
 function epoch4Q2Voice() {
-  responsiveVoice.speak("technology was itself capable of sensing, storing, and evaluating elaborate patterns of information");
+  selectSFX.play(0);
+  responsiveVoice.speak("technology was itself capable of sensing, storing, and evaluating elaborate patterns of information", "UK English Male");
   $("#epoch4Quote2Icon").toggle("puff");
 }
 
 function epoch4Q3Voice() {
-  responsiveVoice.speak("one cubic inch of brain matter every hundred thousand years, whereas we are roughly doubling the computational capacity of computers every year");
+  selectSFX.play(0);
+  responsiveVoice.speak("one cubic inch of brain matter every hundred thousand years, whereas we are roughly doubling the computational capacity of computers every year", "Australian Male");
   $("#epoch4Quote3Icon").toggle("puff");
 }
 
 //////////// epoch 5 quotes for responsive voice
 
 function epoch5Q1Voice() {
-  responsiveVoice.speak("human-machine civilization to transcend the human brain’s limitations");
+  selectSFX.play(0);
+  responsiveVoice.speak("human-machine civilization to transcend the human brain’s limitations", "French Female");
   $("#epoch5Quote1Icon").toggle("puff");
 }
 
 function epoch5Q2Voice() {
-  responsiveVoice.speak("overcoming the profound limitations of biological evolution");
+  selectSFX.play(0);
+  responsiveVoice.speak("overcoming the profound limitations of biological evolution", "Chinese Male");
   $("#epoch5Quote2Icon").toggle("puff");
 }
 
 function epoch5Q3Voice() {
-  responsiveVoice.speak("merger of the vast knowledge embedded in our own brains with the vastly greater capacity, speed, and knowledge-sharing ability of our technology");
+  selectSFX.play(0);
+  responsiveVoice.speak("merger of the vast knowledge embedded in our own brains with the vastly greater capacity, speed, and knowledge-sharing ability of our technology", "Chinese Female");
   $("#epoch5Quote3Icon").toggle("puff");
 }
 
 /////////// Epoch 6 quotes for voice
 
 function epoch6Q1Voice() {
-  responsiveVoice.speak("We currently understand the speed of light as a bounding factor on the transfer of information, but even that, as hinted, may be superseded");
+  selectSFX.play(0);
+  responsiveVoice.speak("We currently understand the speed of light as a bounding factor on the transfer of information, but even that, as hinted, may be superseded", "Portuguese Male");
   $("#epoch6Quote1Icon").toggle("puff");
 }
 
 function epoch6Q2Voice() {
-  responsiveVoice.speak("Intelligence will begin to saturate the matter and energy in its midst");
+  selectSFX.play(0);
+  responsiveVoice.speak("Intelligence will begin to saturate the matter and energy in its midst", "US English Female");
   $("#epoch6Quote2Icon").toggle("puff");
 }
 
 function epoch6Q3Voice() {
-  responsiveVoice.speak("mechanisms of the universe will be transformed into exquisitely sublime forms of intelligence");
+  selectSFX.play(0);
+  responsiveVoice.speak("mechanisms of the universe will be transformed into exquisitely sublime forms of intelligence", "UK English Male");
   $("#epoch6Quote3Icon").toggle("puff");
 }
 

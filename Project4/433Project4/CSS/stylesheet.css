@@ -105,6 +105,7 @@ button {
 } */
 
 #projectTitle {
+  font-family: 'Roboto Condensed', sans-serif;
   position: absolute;
   font-size: 56px;
   top: 30%;
@@ -112,8 +113,9 @@ button {
 }
 
 #projectSubtitle {
+  font-family: 'Roboto Condensed', sans-serif;
   position: absolute;
-  top: 40%;
+  top: 42%;
   text-align: center;
 }
 
