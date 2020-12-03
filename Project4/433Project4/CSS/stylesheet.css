@@ -115,11 +115,27 @@ button {
 #projectSubtitle {
   font-family: 'Roboto Condensed', sans-serif;
   position: absolute;
-  top: 42%;
+  font-size: 24px;
+  top: 40%;
   text-align: center;
 }
 
+#kQuote {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  position: absolute;
+  top: 48%;
+  text-align: center;
+}
 
+#kQuote2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  position: absolute;
+  top: 50%;
+  padding-left: 300px;
+  text-align: center;
+}
 
 #epoch4HumanFace, #epoch6AndroidFace {
   position: absolute;
